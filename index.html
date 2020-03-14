@@ -20,13 +20,23 @@
         <!-- First name input -->
         <div class="form-input">
           <label for="firstName">First name</label>
-          <input type="text" id="firstName" />
+          <input
+            type="text"
+            id="firstName"
+            name="First name"
+            onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))"
+          />
           <small>Error message</small>
         </div>
         <!-- Last name input -->
         <div class="form-input">
           <label for="lastName">Last name</label>
-          <input type="text" id="lastName" />
+          <input
+            type="text"
+            id="lastName"
+            name="Last name"
+            onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))"
+          />
           <small>Error message</small>
         </div>
         <!-- E-mail input -->
@@ -38,13 +48,13 @@
         <!-- Password input -->
         <div class="form-input">
           <label for="password">Password</label>
-          <input type="text" id="password" />
+          <input type="text" id="password" name="Password" />
           <small>Error message</small>
         </div>
         <!-- Password confirmation input -->
         <div class="form-input">
           <label for="password-confirm">Confirm password</label>
-          <input type="text" id="password-confirm" />
+          <input type="text" id="password-confirm" name="Password confirm" />
           <small>Error message</small>
         </div>
         <!-- Submit button -->
