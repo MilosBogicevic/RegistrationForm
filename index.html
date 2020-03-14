@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form with validation</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Form container -->
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Registration Form</h2>
+        <!-- First name input -->
+        <div class="form-input">
+          <label for="firstName">First name</label>
+          <input type="text" id="firstName" placeholder="Enter first name" />
+          <small>Error message</small>
+        </div>
+        <!-- Last name input -->
+        <div class="form-input">
+          <label for="lastName">Last name</label>
+          <input type="text" id="lastName" placeholder="Enter last name" />
+          <small>Error message</small>
+        </div>
+        <!-- E-mail input -->
+        <div class="form-input">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" placeholder="Enter E-mail" />
+          <small>Error message</small>
+        </div>
+        <!-- Password input -->
+        <div id="form-input">
+          <label for="password">Password</label>
+          <input type="text" id="password" placeholder="Enter password" />
+          <small>Error message</small>
+        </div>
+        <!-- Password confirmation input -->
+        <div id="form-input">
+          <label for="password-confirm">Confirm password</label>
+          <input
+            type="text"
+            id="password-confirm"
+            placeholder="Enter password again"
+          />
+          <small>Error message</small>
+        </div>
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
